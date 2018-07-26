@@ -244,6 +244,7 @@
 				5503A9802109E8E00052DBDD /* Frameworks */,
 				5503A9812109E8E00052DBDD /* Resources */,
 				3F5C08B95A7D8C1C889E367A /* [CP] Embed Pods Frameworks */,
+				5503A9BB2109F3640052DBDD /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -345,6 +346,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RePlay/Pods-RePlay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5503A9BB2109F3640052DBDD /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -9,16 +9,16 @@
 import Foundation
 
 protocol Presenter: class {
-    
+
     associatedtype View
-    
+
     var view: View? { get set }
-    
+
     func attach(view: View)
 }
 
 extension Presenter {
-    
+
     func attach(view: View) {
         self.view = view
     }

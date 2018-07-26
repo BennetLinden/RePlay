@@ -9,7 +9,5 @@
 import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
-    return AppState(
-
-    )
+    return AppState()
 }

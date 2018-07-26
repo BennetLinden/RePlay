@@ -12,11 +12,11 @@ import RxSwift
 
 class RxStoreSubscriber<StateType>: StoreSubscriber {
     let rxObserver: AnyObserver<StateType>
-    
+
     init(_ rxObserver: AnyObserver<StateType>) {
         self.rxObserver = rxObserver
     }
-    
+
     func newState(state: StateType) {
         rxObserver.on(.next(state))
     }

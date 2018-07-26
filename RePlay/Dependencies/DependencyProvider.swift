@@ -11,7 +11,7 @@ import RxSwift
 import ReSwift
 
 protocol DependencyProvider {
-    
+
     var reduxStore: Store<AppState> { get }
     var remoteAPI: RemoteAPI { get }
 }

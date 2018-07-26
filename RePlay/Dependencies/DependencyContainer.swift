@@ -11,7 +11,7 @@ import ReSwift
 import RxSwift
 
 final class DependencyContainer: DependencyProvider {
-    
+
     let reduxStore: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil)
     let remoteAPI: RemoteAPI = RemoteAPI()
 }
