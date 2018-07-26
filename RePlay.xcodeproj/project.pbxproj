@@ -10,6 +10,16 @@
 		5503A9872109E8E00052DBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9862109E8E00052DBDD /* AppDelegate.swift */; };
 		5503A98E2109E8E10052DBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5503A98D2109E8E10052DBDD /* Assets.xcassets */; };
 		5503A9912109E8E10052DBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5503A98F2109E8E10052DBDD /* LaunchScreen.storyboard */; };
+		5503A9B02109EE4A0052DBDD /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A99C2109EE490052DBDD /* RemoteAPI.swift */; };
+		5503A9B12109EE4A0052DBDD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A99E2109EE490052DBDD /* AppState.swift */; };
+		5503A9B22109EE4A0052DBDD /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A99F2109EE490052DBDD /* AppReducer.swift */; };
+		5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9A32109EE490052DBDD /* DependencyContainer.swift */; };
+		5503A9B42109EE4A0052DBDD /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9A42109EE490052DBDD /* DependencyProvider.swift */; };
+		5503A9B52109EE4A0052DBDD /* RxStoreSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9A82109EE490052DBDD /* RxStoreSubscriber.swift */; };
+		5503A9B62109EE4A0052DBDD /* Store+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AA2109EE4A0052DBDD /* Store+Extensions.swift */; };
+		5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AC2109EE4A0052DBDD /* UseCase.swift */; };
+		5503A9B82109EE4A0052DBDD /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AE2109EE4A0052DBDD /* View.swift */; };
+		5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AF2109EE4A0052DBDD /* Presenter.swift */; };
 		A81036D6319E2A8F1BBE23EE /* Pods_RePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +30,16 @@
 		5503A98D2109E8E10052DBDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5503A9902109E8E10052DBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5503A9922109E8E10052DBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5503A99C2109EE490052DBDD /* RemoteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		5503A99E2109EE490052DBDD /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5503A99F2109EE490052DBDD /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		5503A9A32109EE490052DBDD /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		5503A9A42109EE490052DBDD /* DependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		5503A9A82109EE490052DBDD /* RxStoreSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxStoreSubscriber.swift; sourceTree = "<group>"; };
+		5503A9AA2109EE4A0052DBDD /* Store+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+Extensions.swift"; sourceTree = "<group>"; };
+		5503A9AC2109EE4A0052DBDD /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		5503A9AE2109EE4A0052DBDD /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5503A9AF2109EE4A0052DBDD /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D60809805280B453AB5024 /* Pods-RePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RePlay/Pods-RePlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +89,13 @@
 				5503A9862109E8E00052DBDD /* AppDelegate.swift */,
 				5503A9922109E8E10052DBDD /* Info.plist */,
 				5503A9982109E8EC0052DBDD /* Assets */,
+				5503A9A92109EE4A0052DBDD /* Extensions */,
+				5503A9A72109EE490052DBDD /* Helpers */,
+				5503A99D2109EE490052DBDD /* Core */,
+				5503A9A22109EE490052DBDD /* Dependencies */,
+				5503A9992109EE490052DBDD /* Data */,
+				5503A9AB2109EE4A0052DBDD /* Use Cases */,
+				5503A9BA2109EED60052DBDD /* Views */,
 			);
 			path = RePlay;
 			sourceTree = "<group>";
@@ -80,6 +107,121 @@
 				5503A98F2109E8E10052DBDD /* LaunchScreen.storyboard */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		5503A9992109EE490052DBDD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5503A99A2109EE490052DBDD /* Models */,
+				5503A99B2109EE490052DBDD /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5503A99A2109EE490052DBDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5503A99B2109EE490052DBDD /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				5503A99C2109EE490052DBDD /* RemoteAPI.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		5503A99D2109EE490052DBDD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5503A99E2109EE490052DBDD /* AppState.swift */,
+				5503A99F2109EE490052DBDD /* AppReducer.swift */,
+				5503A9A02109EE490052DBDD /* States */,
+				5503A9A12109EE490052DBDD /* Actions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5503A9A02109EE490052DBDD /* States */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		5503A9A12109EE490052DBDD /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		5503A9A22109EE490052DBDD /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9A32109EE490052DBDD /* DependencyContainer.swift */,
+				5503A9A42109EE490052DBDD /* DependencyProvider.swift */,
+				5503A9A52109EE490052DBDD /* Use Case Factories */,
+				5503A9A62109EE490052DBDD /* View Controller Factories */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		5503A9A52109EE490052DBDD /* Use Case Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use Case Factories";
+			sourceTree = "<group>";
+		};
+		5503A9A62109EE490052DBDD /* View Controller Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller Factories";
+			sourceTree = "<group>";
+		};
+		5503A9A72109EE490052DBDD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9A82109EE490052DBDD /* RxStoreSubscriber.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5503A9A92109EE4A0052DBDD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9AA2109EE4A0052DBDD /* Store+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5503A9AB2109EE4A0052DBDD /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9AC2109EE4A0052DBDD /* UseCase.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		5503A9AD2109EE4A0052DBDD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9AE2109EE4A0052DBDD /* View.swift */,
+				5503A9AF2109EE4A0052DBDD /* Presenter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5503A9BA2109EED60052DBDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9AD2109EE4A0052DBDD /* Common */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5B2E54546FE1429D78BFAD53 /* Frameworks */ = {
@@ -211,6 +353,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5503A9B52109EE4A0052DBDD /* RxStoreSubscriber.swift in Sources */,
+				5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */,
+				5503A9B62109EE4A0052DBDD /* Store+Extensions.swift in Sources */,
+				5503A9B82109EE4A0052DBDD /* View.swift in Sources */,
+				5503A9B12109EE4A0052DBDD /* AppState.swift in Sources */,
+				5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */,
+				5503A9B02109EE4A0052DBDD /* RemoteAPI.swift in Sources */,
+				5503A9B42109EE4A0052DBDD /* DependencyProvider.swift in Sources */,
+				5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */,
+				5503A9B22109EE4A0052DBDD /* AppReducer.swift in Sources */,
 				5503A9872109E8E00052DBDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
