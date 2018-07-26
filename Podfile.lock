@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.7.2)
+  - PromiseKit (6.3.4):
+    - PromiseKit/CorePromise (= 6.3.4)
+    - PromiseKit/Foundation (= 6.3.4)
+    - PromiseKit/UIKit (= 6.3.4)
+  - PromiseKit/CorePromise (6.3.4)
+  - PromiseKit/Foundation (6.3.4):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.3.4):
+    - PromiseKit/CorePromise
+  - ReSwift (4.0.1)
+  - Reusable (4.0.2):
+    - Reusable/Storyboard (= 4.0.2)
+    - Reusable/View (= 4.0.2)
+  - Reusable/Storyboard (4.0.2)
+  - Reusable/View (4.0.2)
+  - RxSwift (4.2.0)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.26.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - PromiseKit
+  - ReSwift
+  - Reusable (~> 4.0)
+  - RxSwift
+  - SnapKit (~> 4.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PromiseKit
+    - ReSwift
+    - Reusable
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  PromiseKit: e1425568123ec844a944c93f2bcb29d511d39cf5
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+
+PODFILE CHECKSUM: bfff9d694a443dfb3f4b549161f1a7f4fb60a1e3
+
+COCOAPODS: 1.5.3
