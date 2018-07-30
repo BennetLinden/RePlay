@@ -32,10 +32,6 @@ class OnboardingDependencyContainer: OnboardingDependencyProvider {
         return reduxStore.makeObservable { $0.onboardingState }
     }
 
-    func makeInitializeOnboardingUseCase() -> UseCase {
-        return InitializeOnboardingUseCase(actionDispatcher: reduxStore)
-    }
-
     func makeCompleteOnboardingUseCase() -> UseCase {
         return CompleteOnboardingUseCase(actionDispatcher: reduxStore)
     }

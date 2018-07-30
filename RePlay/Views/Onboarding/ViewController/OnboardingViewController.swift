@@ -8,10 +8,9 @@
 //
 
 import UIKit
+import SnapKit
 
 final class OnboardingViewController: UIViewController {
-
-    @IBOutlet private var label: UILabel!
 
     private let presenter: OnboardingPresenter
 
@@ -27,23 +26,14 @@ final class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attach(view: self)
-
         presenter.viewDidLoad()
     }
 
     @IBAction private func completeButtonPressed(_ sender: UIButton) {
         presenter.completeButtonPressed()
     }
-
-    deinit {
-        print("deleted OnboardingViewController")
-    }
-
 }
 
 extension OnboardingViewController: OnboardingView {
 
-    func showPages(_ pages: [String]) {
-        label.text = "Pages: \(pages.count)"
-    }
 }

@@ -9,6 +9,5 @@
 import Foundation
 
 protocol OnboardingUseCaseFactory {
-    func makeInitializeOnboardingUseCase() -> UseCase
     func makeCompleteOnboardingUseCase() -> UseCase
 }

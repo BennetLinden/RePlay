@@ -31,8 +31,6 @@ final class OnboardingPresenter: Presenter {
                 self.handleState(onboardingState)
             })
             .disposed(by: disposeBag)
-        let initializeUseCase = useCaseFactory.makeInitializeOnboardingUseCase()
-        initializeUseCase.start()
     }
 
     private func handleState(_ onboardingState: OnboardingState) {
@@ -41,15 +39,9 @@ final class OnboardingPresenter: Presenter {
             view?.dismiss()
             return
         }
-        view?.showPages(onboardingState.pages)
     }
 
     func completeButtonPressed() {
-        let useCase = useCaseFactory.makeCompleteOnboardingUseCase()
-        useCase.start()
-    }
-
-    deinit {
-        print("deleted OnboardingPresenter")
+        useCaseFactory.makeCompleteOnboardingUseCase().start()
     }
 }

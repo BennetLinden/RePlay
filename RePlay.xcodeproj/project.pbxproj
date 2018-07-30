@@ -42,8 +42,9 @@
 		55735A58210B5CF500E03A6B /* OnboardingUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */; };
 		55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A59210F057700E03A6B /* OnboardingState.swift */; };
 		55735A5C210F157F00E03A6B /* DismissableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5B210F157F00E03A6B /* DismissableView.swift */; };
-		55735A5E210F18F700E03A6B /* InitializeOnboardingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */; };
 		55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5F210F330B00E03A6B /* ActionDispatcher.swift */; };
+		55735A64210F482600E03A6B /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A63210F482600E03A6B /* UserDefaults+Extensions.swift */; };
+		55735A66210F4AE500E03A6B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A65210F4AE500E03A6B /* UIColor+Extensions.swift */; };
 		A81036D6319E2A8F1BBE23EE /* Pods_RePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +87,9 @@
 		55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUseCaseFactory.swift; sourceTree = "<group>"; };
 		55735A59210F057700E03A6B /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		55735A5B210F157F00E03A6B /* DismissableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableView.swift; sourceTree = "<group>"; };
-		55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeOnboardingUseCase.swift; sourceTree = "<group>"; };
 		55735A5F210F330B00E03A6B /* ActionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
+		55735A63210F482600E03A6B /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		55735A65210F4AE500E03A6B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D60809805280B453AB5024 /* Pods-RePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RePlay/Pods-RePlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				5503A9AA2109EE4A0052DBDD /* Store+Extensions.swift */,
+				55735A63210F482600E03A6B /* UserDefaults+Extensions.swift */,
+				55735A65210F4AE500E03A6B /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,7 +264,6 @@
 			children = (
 				5503A9AC2109EE4A0052DBDD /* UseCase.swift */,
 				55735A36210B3B8C00E03A6B /* StartUpUseCase.swift */,
-				55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */,
 				55735A53210B5C8000E03A6B /* CompleteOnboardingUseCase.swift */,
 			);
 			path = "Use Cases";
@@ -514,9 +517,10 @@
 				5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */,
 				55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */,
 				55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */,
-				55735A5E210F18F700E03A6B /* InitializeOnboardingUseCase.swift in Sources */,
+				55735A66210F4AE500E03A6B /* UIColor+Extensions.swift in Sources */,
 				55735A50210B584100E03A6B /* OnboardingView.swift in Sources */,
 				5503A9B02109EE4A0052DBDD /* RemoteAPI.swift in Sources */,
+				55735A64210F482600E03A6B /* UserDefaults+Extensions.swift in Sources */,
 				55735A56210B5CA600E03A6B /* OnboardingActions.swift in Sources */,
 				55735A4F210B584100E03A6B /* OnboardingViewController.swift in Sources */,
 				55735A37210B3B8C00E03A6B /* StartUpUseCase.swift in Sources */,

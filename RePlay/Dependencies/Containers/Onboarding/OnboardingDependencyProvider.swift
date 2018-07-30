@@ -20,7 +20,6 @@ protocol OnboardingDependencyProvider {
     func makeOnboardingViewController() -> UIViewController
     func makeOnboardingPresenter() -> OnboardingPresenter
     func makeOnboardingStateObservable() -> Observable<OnboardingState>
-    func makeInitializeOnboardingUseCase() -> UseCase
     func makeCompleteOnboardingUseCase() -> UseCase
 
 }

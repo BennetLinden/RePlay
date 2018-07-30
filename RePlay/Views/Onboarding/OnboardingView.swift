@@ -11,5 +11,4 @@ import Foundation
 
 // Presenter -> View
 protocol OnboardingView: DismissableView {
-    func showPages(_ pages: [String])
 }

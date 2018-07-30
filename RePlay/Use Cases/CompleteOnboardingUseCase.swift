@@ -18,6 +18,7 @@ class CompleteOnboardingUseCase: UseCase {
     }
 
     func start() {
+        UserDefaults.standard.set(true, forKey: UserDefaults.Keys.kOnboardingCompleted.rawValue)
         actionDispatcher.dispatch(OnboardingAction.Completed())
     }
 }

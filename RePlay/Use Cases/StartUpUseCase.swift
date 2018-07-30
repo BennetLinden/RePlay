@@ -19,8 +19,17 @@ class StartUpUseCase: UseCase {
 
     func start() {
         actionDispatcher.dispatch(StartUpAction.Start())
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
-            self.actionDispatcher.dispatch(StartUpAction.ShowOnboarding())
+
+        if shouldShowOnboarding() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+                self.actionDispatcher.dispatch(StartUpAction.ShowOnboarding())
+            }
+            return
         }
     }
+
+    private func shouldShowOnboarding() -> Bool {
+        return UserDefaults.standard.bool(forKey: UserDefaults.Keys.kOnboardingCompleted.rawValue) == false
+    }
+
 }

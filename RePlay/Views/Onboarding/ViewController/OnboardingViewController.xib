@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="RePlay" customModuleProvider="target">
             <connections>
-                <outlet property="label" destination="rlR-cp-hxZ" id="XMA-YB-biA"/>
                 <outlet property="view" destination="iN0-l3-epB" id="s1z-k2-4Eh"/>
             </connections>
         </placeholder>
@@ -21,35 +20,46 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlR-cp-hxZ">
-                    <rect key="frame" x="161" y="262" width="52" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZHr-fv-fMn">
+                    <rect key="frame" x="40" y="241" width="295" height="106"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looks like we're in an app, Morty" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEJ-3c-uZJ">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="67"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                            <color key="textColor" red="0.15686274510000001" green="0.28235294119999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aw, geez, Rick" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23g-Fs-hYh">
+                            <rect key="frame" x="0.0" y="82" width="295" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.15686274510000001" green="0.28235294119999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXr-dF-wAB">
-                    <rect key="frame" x="137" y="323" width="100" height="41"/>
+                    <rect key="frame" x="30" y="586" width="315" height="51"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.28235294117647058" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                    <state key="normal" title="Complete"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                    <state key="normal" title="Wubba Lubba Dub Dub!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="completeButtonPressed:" destination="-1" eventType="touchUpInside" id="wDs-CK-ZSR"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.19607843137254902" green="0.80000000000000004" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="RXr-dF-wAB" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="80r-MX-03u"/>
-                <constraint firstItem="RXr-dF-wAB" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="OQy-w3-sSL"/>
-                <constraint firstItem="RXr-dF-wAB" firstAttribute="top" secondItem="rlR-cp-hxZ" secondAttribute="bottom" constant="40" id="eGS-dj-ntI"/>
-                <constraint firstItem="rlR-cp-hxZ" firstAttribute="centerX" secondItem="RXr-dF-wAB" secondAttribute="centerX" id="qU0-9k-uBJ"/>
+                <constraint firstItem="RXr-dF-wAB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="46E-qa-4fJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZHr-fv-fMn" secondAttribute="trailing" constant="40" id="5m4-tD-FPV"/>
+                <constraint firstItem="ZHr-fv-fMn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="hfL-0f-woE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RXr-dF-wAB" secondAttribute="bottom" constant="30" id="jod-Or-j1j"/>
+                <constraint firstItem="ZHr-fv-fMn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-50" id="tWz-yW-qJb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RXr-dF-wAB" secondAttribute="trailing" constant="30" id="zSt-96-ncc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mcb-nN-xCX">
-            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-        </button>
     </objects>
 </document>

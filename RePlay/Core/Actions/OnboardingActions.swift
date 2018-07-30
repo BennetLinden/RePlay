@@ -10,10 +10,5 @@ import Foundation
 import ReSwift
 
 enum OnboardingAction {
-
-    public struct Initialized: Action {
-        let pages: [String]
-    }
-    
     public struct Completed: Action {}
 }

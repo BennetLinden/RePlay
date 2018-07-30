@@ -11,25 +11,19 @@ import ReSwift
 
 func onboardingReducer(action: Action, state: OnboardingState?) -> OnboardingState {
 
-    let state = state ?? OnboardingState(pages: [], completed: false)
-
     switch action {
     case _ where action is StartUpAction.ShowOnboarding:
-        return OnboardingState(pages: [], completed: false)
-
-    case let action as OnboardingAction.Initialized:
-        return OnboardingState(pages: action.pages, completed: false)
+        return OnboardingState(completed: false)
 
     case _ where action is OnboardingAction.Completed:
-        return OnboardingState(pages: state.pages, completed: true)
+        return OnboardingState(completed: true)
 
     default:
-        return state
+        return state ?? OnboardingState(completed: false)
     }
 }
 
 struct OnboardingState: StateType, Equatable {
 
-    let pages: [String]
     let completed: Bool
 }
