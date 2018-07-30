@@ -10,6 +10,8 @@ import Foundation
 import RxSwift
 import ReSwift
 
+extension Store: ActionDispatcher { }
+
 extension Store {
 
     public func makeObservable<SelectedState>(_ selector: @escaping ((State) -> SelectedState)) -> Observable<SelectedState> {

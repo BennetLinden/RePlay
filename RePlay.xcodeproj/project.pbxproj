@@ -20,6 +20,30 @@
 		5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AC2109EE4A0052DBDD /* UseCase.swift */; };
 		5503A9B82109EE4A0052DBDD /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AE2109EE4A0052DBDD /* View.swift */; };
 		5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AF2109EE4A0052DBDD /* Presenter.swift */; };
+		55735A0F210A16B400E03A6B /* StartUpViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */; };
+		55735A2D210B0E2500E03A6B /* StartUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A29210B0E2500E03A6B /* StartUpPresenter.swift */; };
+		55735A2E210B0E2500E03A6B /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A2A210B0E2500E03A6B /* StartUpViewController.swift */; };
+		55735A2F210B0E2500E03A6B /* StartUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A2B210B0E2500E03A6B /* StartUpView.swift */; };
+		55735A30210B0E2500E03A6B /* StartUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55735A2C210B0E2500E03A6B /* StartUpViewController.xib */; };
+		55735A33210B100C00E03A6B /* StartUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A32210B100C00E03A6B /* StartUpState.swift */; };
+		55735A37210B3B8C00E03A6B /* StartUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A36210B3B8C00E03A6B /* StartUpUseCase.swift */; };
+		55735A39210B3BDD00E03A6B /* StartUpUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A38210B3BDD00E03A6B /* StartUpUseCaseFactory.swift */; };
+		55735A3B210B403400E03A6B /* LoaderViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A3A210B403400E03A6B /* LoaderViewable.swift */; };
+		55735A40210B42AF00E03A6B /* StartUpActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A3F210B42AF00E03A6B /* StartUpActions.swift */; };
+		55735A44210B480D00E03A6B /* OnboardingDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A43210B480D00E03A6B /* OnboardingDependencyProvider.swift */; };
+		55735A46210B481F00E03A6B /* OnboardingDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A45210B481F00E03A6B /* OnboardingDependencyContainer.swift */; };
+		55735A48210B495C00E03A6B /* OnboardingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A47210B495C00E03A6B /* OnboardingViewControllerFactory.swift */; };
+		55735A4E210B584100E03A6B /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A4A210B584100E03A6B /* OnboardingPresenter.swift */; };
+		55735A4F210B584100E03A6B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A4B210B584100E03A6B /* OnboardingViewController.swift */; };
+		55735A50210B584100E03A6B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A4C210B584100E03A6B /* OnboardingView.swift */; };
+		55735A51210B584100E03A6B /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55735A4D210B584100E03A6B /* OnboardingViewController.xib */; };
+		55735A54210B5C8000E03A6B /* CompleteOnboardingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A53210B5C8000E03A6B /* CompleteOnboardingUseCase.swift */; };
+		55735A56210B5CA600E03A6B /* OnboardingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A55210B5CA600E03A6B /* OnboardingActions.swift */; };
+		55735A58210B5CF500E03A6B /* OnboardingUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */; };
+		55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A59210F057700E03A6B /* OnboardingState.swift */; };
+		55735A5C210F157F00E03A6B /* DismissableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5B210F157F00E03A6B /* DismissableView.swift */; };
+		55735A5E210F18F700E03A6B /* InitializeOnboardingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */; };
+		55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5F210F330B00E03A6B /* ActionDispatcher.swift */; };
 		A81036D6319E2A8F1BBE23EE /* Pods_RePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +64,30 @@
 		5503A9AC2109EE4A0052DBDD /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		5503A9AE2109EE4A0052DBDD /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		5503A9AF2109EE4A0052DBDD /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewControllerFactory.swift; sourceTree = "<group>"; };
+		55735A29210B0E2500E03A6B /* StartUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpPresenter.swift; sourceTree = "<group>"; };
+		55735A2A210B0E2500E03A6B /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		55735A2B210B0E2500E03A6B /* StartUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpView.swift; sourceTree = "<group>"; };
+		55735A2C210B0E2500E03A6B /* StartUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartUpViewController.xib; sourceTree = "<group>"; };
+		55735A32210B100C00E03A6B /* StartUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpState.swift; sourceTree = "<group>"; };
+		55735A36210B3B8C00E03A6B /* StartUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpUseCase.swift; sourceTree = "<group>"; };
+		55735A38210B3BDD00E03A6B /* StartUpUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpUseCaseFactory.swift; sourceTree = "<group>"; };
+		55735A3A210B403400E03A6B /* LoaderViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewable.swift; sourceTree = "<group>"; };
+		55735A3F210B42AF00E03A6B /* StartUpActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpActions.swift; sourceTree = "<group>"; };
+		55735A43210B480D00E03A6B /* OnboardingDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDependencyProvider.swift; sourceTree = "<group>"; };
+		55735A45210B481F00E03A6B /* OnboardingDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDependencyContainer.swift; sourceTree = "<group>"; };
+		55735A47210B495C00E03A6B /* OnboardingViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerFactory.swift; sourceTree = "<group>"; };
+		55735A4A210B584100E03A6B /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		55735A4B210B584100E03A6B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		55735A4C210B584100E03A6B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		55735A4D210B584100E03A6B /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		55735A53210B5C8000E03A6B /* CompleteOnboardingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteOnboardingUseCase.swift; sourceTree = "<group>"; };
+		55735A55210B5CA600E03A6B /* OnboardingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingActions.swift; sourceTree = "<group>"; };
+		55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUseCaseFactory.swift; sourceTree = "<group>"; };
+		55735A59210F057700E03A6B /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		55735A5B210F157F00E03A6B /* DismissableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableView.swift; sourceTree = "<group>"; };
+		55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeOnboardingUseCase.swift; sourceTree = "<group>"; };
+		55735A5F210F330B00E03A6B /* ActionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
 		927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D60809805280B453AB5024 /* Pods-RePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RePlay/Pods-RePlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +195,8 @@
 		5503A9A02109EE490052DBDD /* States */ = {
 			isa = PBXGroup;
 			children = (
+				55735A32210B100C00E03A6B /* StartUpState.swift */,
+				55735A59210F057700E03A6B /* OnboardingState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -154,6 +204,9 @@
 		5503A9A12109EE490052DBDD /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				55735A5F210F330B00E03A6B /* ActionDispatcher.swift */,
+				55735A3F210B42AF00E03A6B /* StartUpActions.swift */,
+				55735A55210B5CA600E03A6B /* OnboardingActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -161,8 +214,7 @@
 		5503A9A22109EE490052DBDD /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				5503A9A32109EE490052DBDD /* DependencyContainer.swift */,
-				5503A9A42109EE490052DBDD /* DependencyProvider.swift */,
+				55735A41210B47C400E03A6B /* Containers */,
 				5503A9A52109EE490052DBDD /* Use Case Factories */,
 				5503A9A62109EE490052DBDD /* View Controller Factories */,
 			);
@@ -172,6 +224,8 @@
 		5503A9A52109EE490052DBDD /* Use Case Factories */ = {
 			isa = PBXGroup;
 			children = (
+				55735A38210B3BDD00E03A6B /* StartUpUseCaseFactory.swift */,
+				55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */,
 			);
 			path = "Use Case Factories";
 			sourceTree = "<group>";
@@ -179,6 +233,8 @@
 		5503A9A62109EE490052DBDD /* View Controller Factories */ = {
 			isa = PBXGroup;
 			children = (
+				55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */,
+				55735A47210B495C00E03A6B /* OnboardingViewControllerFactory.swift */,
 			);
 			path = "View Controller Factories";
 			sourceTree = "<group>";
@@ -203,6 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				5503A9AC2109EE4A0052DBDD /* UseCase.swift */,
+				55735A36210B3B8C00E03A6B /* StartUpUseCase.swift */,
+				55735A5D210F18F700E03A6B /* InitializeOnboardingUseCase.swift */,
+				55735A53210B5C8000E03A6B /* CompleteOnboardingUseCase.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -210,8 +269,10 @@
 		5503A9AD2109EE4A0052DBDD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5503A9AE2109EE4A0052DBDD /* View.swift */,
 				5503A9AF2109EE4A0052DBDD /* Presenter.swift */,
+				5503A9AE2109EE4A0052DBDD /* View.swift */,
+				55735A3A210B403400E03A6B /* LoaderViewable.swift */,
+				55735A5B210F157F00E03A6B /* DismissableView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -220,8 +281,75 @@
 			isa = PBXGroup;
 			children = (
 				5503A9AD2109EE4A0052DBDD /* Common */,
+				55735A11210B06A900E03A6B /* StartUp */,
+				55735A49210B582800E03A6B /* Onboarding */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		55735A10210A18FB00E03A6B /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		55735A11210B06A900E03A6B /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				55735A29210B0E2500E03A6B /* StartUpPresenter.swift */,
+				55735A2B210B0E2500E03A6B /* StartUpView.swift */,
+				55735A31210B0EB600E03A6B /* ViewController */,
+			);
+			path = StartUp;
+			sourceTree = "<group>";
+		};
+		55735A31210B0EB600E03A6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55735A2A210B0E2500E03A6B /* StartUpViewController.swift */,
+				55735A2C210B0E2500E03A6B /* StartUpViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		55735A41210B47C400E03A6B /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				5503A9A32109EE490052DBDD /* DependencyContainer.swift */,
+				5503A9A42109EE490052DBDD /* DependencyProvider.swift */,
+				55735A42210B47F000E03A6B /* Onboarding */,
+				55735A10210A18FB00E03A6B /* Tab Bar */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		55735A42210B47F000E03A6B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				55735A45210B481F00E03A6B /* OnboardingDependencyContainer.swift */,
+				55735A43210B480D00E03A6B /* OnboardingDependencyProvider.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		55735A49210B582800E03A6B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				55735A4A210B584100E03A6B /* OnboardingPresenter.swift */,
+				55735A4C210B584100E03A6B /* OnboardingView.swift */,
+				55735A52210B587200E03A6B /* ViewController */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		55735A52210B587200E03A6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55735A4B210B584100E03A6B /* OnboardingViewController.swift */,
+				55735A4D210B584100E03A6B /* OnboardingViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		5B2E54546FE1429D78BFAD53 /* Frameworks */ = {
@@ -295,6 +423,8 @@
 			files = (
 				5503A9912109E8E10052DBDD /* LaunchScreen.storyboard in Resources */,
 				5503A98E2109E8E10052DBDD /* Assets.xcassets in Resources */,
+				55735A30210B0E2500E03A6B /* StartUpViewController.xib in Resources */,
+				55735A51210B584100E03A6B /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +490,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -368,17 +499,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55735A40210B42AF00E03A6B /* StartUpActions.swift in Sources */,
+				55735A46210B481F00E03A6B /* OnboardingDependencyContainer.swift in Sources */,
 				5503A9B52109EE4A0052DBDD /* RxStoreSubscriber.swift in Sources */,
+				55735A33210B100C00E03A6B /* StartUpState.swift in Sources */,
+				55735A54210B5C8000E03A6B /* CompleteOnboardingUseCase.swift in Sources */,
+				55735A5C210F157F00E03A6B /* DismissableView.swift in Sources */,
+				55735A44210B480D00E03A6B /* OnboardingDependencyProvider.swift in Sources */,
 				5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */,
 				5503A9B62109EE4A0052DBDD /* Store+Extensions.swift in Sources */,
 				5503A9B82109EE4A0052DBDD /* View.swift in Sources */,
+				55735A48210B495C00E03A6B /* OnboardingViewControllerFactory.swift in Sources */,
 				5503A9B12109EE4A0052DBDD /* AppState.swift in Sources */,
 				5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */,
+				55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */,
+				55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */,
+				55735A5E210F18F700E03A6B /* InitializeOnboardingUseCase.swift in Sources */,
+				55735A50210B584100E03A6B /* OnboardingView.swift in Sources */,
 				5503A9B02109EE4A0052DBDD /* RemoteAPI.swift in Sources */,
+				55735A56210B5CA600E03A6B /* OnboardingActions.swift in Sources */,
+				55735A4F210B584100E03A6B /* OnboardingViewController.swift in Sources */,
+				55735A37210B3B8C00E03A6B /* StartUpUseCase.swift in Sources */,
 				5503A9B42109EE4A0052DBDD /* DependencyProvider.swift in Sources */,
 				5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */,
+				55735A4E210B584100E03A6B /* OnboardingPresenter.swift in Sources */,
 				5503A9B22109EE4A0052DBDD /* AppReducer.swift in Sources */,
+				55735A2F210B0E2500E03A6B /* StartUpView.swift in Sources */,
 				5503A9872109E8E00052DBDD /* AppDelegate.swift in Sources */,
+				55735A3B210B403400E03A6B /* LoaderViewable.swift in Sources */,
+				55735A2D210B0E2500E03A6B /* StartUpPresenter.swift in Sources */,
+				55735A2E210B0E2500E03A6B /* StartUpViewController.swift in Sources */,
+				55735A39210B3BDD00E03A6B /* StartUpUseCaseFactory.swift in Sources */,
+				55735A58210B5CF500E03A6B /* OnboardingUseCaseFactory.swift in Sources */,
+				55735A0F210A16B400E03A6B /* StartUpViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
