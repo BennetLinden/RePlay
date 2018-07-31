@@ -12,5 +12,4 @@ import Foundation
 // Presenter -> View
 protocol StartUpView: LoaderViewable {
     func showOnboarding()
-    func showLogin()
 }

@@ -11,7 +11,6 @@ import ReSwift
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
         startUpState: startUpReducer(action: action, state: state?.startUpState),
-        onboardingState: onboardingReducer(action: action, state: state?.onboardingState),
-        loginState: loginReducer(action: action, state: state?.loginState)
+        onboardingState: onboardingReducer(action: action, state: state?.onboardingState)
     )
 }

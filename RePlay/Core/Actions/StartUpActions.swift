@@ -13,6 +13,5 @@ enum StartUpAction {
 
     public struct Start: Action {}
     public struct ShowOnboarding: Action {}
-    public struct ShowLogin: Action {}
-    public struct Authenticated: Action {}
+    public struct Completed: Action {}
 }

@@ -48,12 +48,9 @@ final class StartUpPresenter: Presenter {
             view?.hideLoader()
             view?.showOnboarding()
 
-        case .login:
+        case .completed:
             view?.hideLoader()
-            view?.showLogin()
 
-        case .authenticated:
-            view?.hideLoader()
         }
     }
 }

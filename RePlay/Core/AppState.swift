@@ -11,5 +11,4 @@ import ReSwift
 struct AppState: StateType, Equatable {
     let startUpState: StartUpState
     let onboardingState: OnboardingState
-    let loginState: LoginState
 }

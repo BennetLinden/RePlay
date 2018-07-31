@@ -26,7 +26,7 @@ class StartUpUseCase: UseCase {
             }
             return
         }
-        actionDispatcher.dispatch(StartUpAction.ShowLogin())
+        actionDispatcher.dispatch(StartUpAction.Completed())
     }
 
     private func shouldShowOnboarding() -> Bool {

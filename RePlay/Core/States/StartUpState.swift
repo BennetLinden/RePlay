@@ -18,11 +18,8 @@ func startUpReducer(action: Action, state: StartUpState?) -> StartUpState {
     case _ where action is StartUpAction.ShowOnboarding:
         return .onboarding
 
-    case _ where action is StartUpAction.ShowLogin:
-        return .login
-
-    case _ where action is StartUpAction.Authenticated:
-        return .authenticated
+    case _ where action is StartUpAction.Completed:
+        return .completed
 
     default:
         return state ?? .starting
@@ -32,6 +29,5 @@ func startUpReducer(action: Action, state: StartUpState?) -> StartUpState {
 enum StartUpState: StateType, Equatable {
     case starting
     case onboarding
-    case login
-    case authenticated
+    case completed
 }
