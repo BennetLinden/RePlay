@@ -9,7 +9,7 @@
 import Foundation
 import ReSwift
 
-class StartUpUseCase: UseCase {
+final class StartUpUseCase: UseCase {
 
     let actionDispatcher: ActionDispatcher
 

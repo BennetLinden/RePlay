@@ -34,8 +34,7 @@ final class StartUpPresenter: Presenter {
     }
 
     func viewDidAppear() {
-        let startUpUseCase = useCaseFactory.makeStartUpUseCase()
-        startUpUseCase.start()
+        useCaseFactory.makeStartUpUseCase().start()
     }
 
     private func handleState(_ startUpState: StartUpState) {
@@ -50,7 +49,7 @@ final class StartUpPresenter: Presenter {
 
         case .completed:
             view?.hideLoader()
-
+            view?.showCharacterList()
         }
     }
 }

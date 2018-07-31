@@ -19,9 +19,14 @@ final class DependencyContainer: DependencyProvider {
         return OnboardingDependencyContainer(reduxStore: reduxStore)
     }
 
+    func makeCharacterDependencyContainer() -> CharacterDependencyContainer {
+        return CharacterDependencyContainer(reduxStore: reduxStore)
+    }
+
     func makeStartUpViewController() -> UIViewController {
         return StartUpViewController(presenter: makeStartUpPresenter(),
-                                     onboardingViewControllerFactory: makeOnboardingDependencyContainer())
+                                     onboardingViewControllerFactory: makeOnboardingDependencyContainer(),
+                                     characterListViewControllerFactory: makeCharacterDependencyContainer())
     }
 
     func makeStartUpPresenter() -> StartUpPresenter {

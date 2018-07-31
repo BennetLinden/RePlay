@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CompleteOnboardingUseCase: UseCase {
+final class CompleteOnboardingUseCase: UseCase {
 
     let actionDispatcher: ActionDispatcher
 

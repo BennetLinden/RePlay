@@ -11,11 +11,11 @@ import UIKit
 import ReSwift
 import RxSwift
 
-class OnboardingDependencyContainer: OnboardingDependencyProvider {
+final class OnboardingDependencyContainer: OnboardingDependencyProvider {
 
     let reduxStore: Store<AppState>
 
-    required init(reduxStore: Store<AppState>) {
+    init(reduxStore: Store<AppState>) {
         self.reduxStore = reduxStore
     }
 
