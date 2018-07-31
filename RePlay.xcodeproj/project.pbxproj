@@ -20,6 +20,10 @@
 		5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AC2109EE4A0052DBDD /* UseCase.swift */; };
 		5503A9B82109EE4A0052DBDD /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AE2109EE4A0052DBDD /* View.swift */; };
 		5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503A9AF2109EE4A0052DBDD /* Presenter.swift */; };
+		555FD4D4210F5D1F006892E6 /* LoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4D3210F5D1F006892E6 /* LoginViewControllerFactory.swift */; };
+		555FD4D6210F640B006892E6 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4D5210F640B006892E6 /* LoginUseCase.swift */; };
+		555FD4D8210F642A006892E6 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4D7210F642A006892E6 /* LoginUseCaseFactory.swift */; };
+		555FD4DA21104809006892E6 /* LoginActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4D921104809006892E6 /* LoginActions.swift */; };
 		55735A0F210A16B400E03A6B /* StartUpViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */; };
 		55735A2D210B0E2500E03A6B /* StartUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A29210B0E2500E03A6B /* StartUpPresenter.swift */; };
 		55735A2E210B0E2500E03A6B /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A2A210B0E2500E03A6B /* StartUpViewController.swift */; };
@@ -45,6 +49,13 @@
 		55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A5F210F330B00E03A6B /* ActionDispatcher.swift */; };
 		55735A64210F482600E03A6B /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A63210F482600E03A6B /* UserDefaults+Extensions.swift */; };
 		55735A66210F4AE500E03A6B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A65210F4AE500E03A6B /* UIColor+Extensions.swift */; };
+		55735A6C210F551000E03A6B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A68210F551000E03A6B /* LoginPresenter.swift */; };
+		55735A6D210F551000E03A6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A69210F551000E03A6B /* LoginViewController.swift */; };
+		55735A6E210F551000E03A6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A6A210F551000E03A6B /* LoginView.swift */; };
+		55735A6F210F551000E03A6B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55735A6B210F551000E03A6B /* LoginViewController.xib */; };
+		55735A74210F5BCF00E03A6B /* LoginDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A73210F5BCF00E03A6B /* LoginDependencyProvider.swift */; };
+		55735A76210F5BDB00E03A6B /* LoginDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A75210F5BDB00E03A6B /* LoginDependencyContainer.swift */; };
+		55735A78210F5C5800E03A6B /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55735A77210F5C5800E03A6B /* LoginState.swift */; };
 		A81036D6319E2A8F1BBE23EE /* Pods_RePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +76,10 @@
 		5503A9AC2109EE4A0052DBDD /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		5503A9AE2109EE4A0052DBDD /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		5503A9AF2109EE4A0052DBDD /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		555FD4D3210F5D1F006892E6 /* LoginViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFactory.swift; sourceTree = "<group>"; };
+		555FD4D5210F640B006892E6 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		555FD4D7210F642A006892E6 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
+		555FD4D921104809006892E6 /* LoginActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginActions.swift; sourceTree = "<group>"; };
 		55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewControllerFactory.swift; sourceTree = "<group>"; };
 		55735A29210B0E2500E03A6B /* StartUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpPresenter.swift; sourceTree = "<group>"; };
 		55735A2A210B0E2500E03A6B /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +105,13 @@
 		55735A5F210F330B00E03A6B /* ActionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
 		55735A63210F482600E03A6B /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		55735A65210F4AE500E03A6B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		55735A68210F551000E03A6B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		55735A69210F551000E03A6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		55735A6A210F551000E03A6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55735A6B210F551000E03A6B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		55735A73210F5BCF00E03A6B /* LoginDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependencyProvider.swift; sourceTree = "<group>"; };
+		55735A75210F5BDB00E03A6B /* LoginDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDependencyContainer.swift; sourceTree = "<group>"; };
+		55735A77210F5C5800E03A6B /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 		927301453B7CC72EFBDDCBAF /* Pods_RePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D60809805280B453AB5024 /* Pods-RePlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RePlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RePlay/Pods-RePlay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +221,7 @@
 			children = (
 				55735A32210B100C00E03A6B /* StartUpState.swift */,
 				55735A59210F057700E03A6B /* OnboardingState.swift */,
+				55735A77210F5C5800E03A6B /* LoginState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -209,6 +232,7 @@
 				55735A5F210F330B00E03A6B /* ActionDispatcher.swift */,
 				55735A3F210B42AF00E03A6B /* StartUpActions.swift */,
 				55735A55210B5CA600E03A6B /* OnboardingActions.swift */,
+				555FD4D921104809006892E6 /* LoginActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -228,6 +252,7 @@
 			children = (
 				55735A38210B3BDD00E03A6B /* StartUpUseCaseFactory.swift */,
 				55735A57210B5CF500E03A6B /* OnboardingUseCaseFactory.swift */,
+				555FD4D7210F642A006892E6 /* LoginUseCaseFactory.swift */,
 			);
 			path = "Use Case Factories";
 			sourceTree = "<group>";
@@ -237,6 +262,7 @@
 			children = (
 				55735A0E210A16B400E03A6B /* StartUpViewControllerFactory.swift */,
 				55735A47210B495C00E03A6B /* OnboardingViewControllerFactory.swift */,
+				555FD4D3210F5D1F006892E6 /* LoginViewControllerFactory.swift */,
 			);
 			path = "View Controller Factories";
 			sourceTree = "<group>";
@@ -265,6 +291,7 @@
 				5503A9AC2109EE4A0052DBDD /* UseCase.swift */,
 				55735A36210B3B8C00E03A6B /* StartUpUseCase.swift */,
 				55735A53210B5C8000E03A6B /* CompleteOnboardingUseCase.swift */,
+				555FD4D5210F640B006892E6 /* LoginUseCase.swift */,
 			);
 			path = "Use Cases";
 			sourceTree = "<group>";
@@ -286,6 +313,7 @@
 				5503A9AD2109EE4A0052DBDD /* Common */,
 				55735A11210B06A900E03A6B /* StartUp */,
 				55735A49210B582800E03A6B /* Onboarding */,
+				55735A67210F54FF00E03A6B /* Login */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,9 +347,10 @@
 		55735A41210B47C400E03A6B /* Containers */ = {
 			isa = PBXGroup;
 			children = (
-				5503A9A32109EE490052DBDD /* DependencyContainer.swift */,
 				5503A9A42109EE490052DBDD /* DependencyProvider.swift */,
+				5503A9A32109EE490052DBDD /* DependencyContainer.swift */,
 				55735A42210B47F000E03A6B /* Onboarding */,
+				55735A72210F5BBB00E03A6B /* Login */,
 				55735A10210A18FB00E03A6B /* Tab Bar */,
 			);
 			path = Containers;
@@ -330,8 +359,8 @@
 		55735A42210B47F000E03A6B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				55735A45210B481F00E03A6B /* OnboardingDependencyContainer.swift */,
 				55735A43210B480D00E03A6B /* OnboardingDependencyProvider.swift */,
+				55735A45210B481F00E03A6B /* OnboardingDependencyContainer.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -353,6 +382,34 @@
 				55735A4D210B584100E03A6B /* OnboardingViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		55735A67210F54FF00E03A6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				55735A68210F551000E03A6B /* LoginPresenter.swift */,
+				55735A6A210F551000E03A6B /* LoginView.swift */,
+				55735A70210F551900E03A6B /* ViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		55735A70210F551900E03A6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55735A69210F551000E03A6B /* LoginViewController.swift */,
+				55735A6B210F551000E03A6B /* LoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		55735A72210F5BBB00E03A6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				55735A73210F5BCF00E03A6B /* LoginDependencyProvider.swift */,
+				55735A75210F5BDB00E03A6B /* LoginDependencyContainer.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		5B2E54546FE1429D78BFAD53 /* Frameworks */ = {
@@ -424,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55735A6F210F551000E03A6B /* LoginViewController.xib in Resources */,
 				5503A9912109E8E10052DBDD /* LaunchScreen.storyboard in Resources */,
 				5503A98E2109E8E10052DBDD /* Assets.xcassets in Resources */,
 				55735A30210B0E2500E03A6B /* StartUpViewController.xib in Resources */,
@@ -502,20 +560,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55735A6D210F551000E03A6B /* LoginViewController.swift in Sources */,
+				55735A74210F5BCF00E03A6B /* LoginDependencyProvider.swift in Sources */,
 				55735A40210B42AF00E03A6B /* StartUpActions.swift in Sources */,
 				55735A46210B481F00E03A6B /* OnboardingDependencyContainer.swift in Sources */,
 				5503A9B52109EE4A0052DBDD /* RxStoreSubscriber.swift in Sources */,
+				55735A78210F5C5800E03A6B /* LoginState.swift in Sources */,
 				55735A33210B100C00E03A6B /* StartUpState.swift in Sources */,
+				55735A76210F5BDB00E03A6B /* LoginDependencyContainer.swift in Sources */,
 				55735A54210B5C8000E03A6B /* CompleteOnboardingUseCase.swift in Sources */,
+				555FD4D4210F5D1F006892E6 /* LoginViewControllerFactory.swift in Sources */,
 				55735A5C210F157F00E03A6B /* DismissableView.swift in Sources */,
+				555FD4D6210F640B006892E6 /* LoginUseCase.swift in Sources */,
 				55735A44210B480D00E03A6B /* OnboardingDependencyProvider.swift in Sources */,
 				5503A9B92109EE4A0052DBDD /* Presenter.swift in Sources */,
 				5503A9B62109EE4A0052DBDD /* Store+Extensions.swift in Sources */,
+				55735A6C210F551000E03A6B /* LoginPresenter.swift in Sources */,
 				5503A9B82109EE4A0052DBDD /* View.swift in Sources */,
 				55735A48210B495C00E03A6B /* OnboardingViewControllerFactory.swift in Sources */,
+				55735A6E210F551000E03A6B /* LoginView.swift in Sources */,
 				5503A9B12109EE4A0052DBDD /* AppState.swift in Sources */,
 				5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */,
 				55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */,
+				555FD4D8210F642A006892E6 /* LoginUseCaseFactory.swift in Sources */,
 				55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */,
 				55735A66210F4AE500E03A6B /* UIColor+Extensions.swift in Sources */,
 				55735A50210B584100E03A6B /* OnboardingView.swift in Sources */,
@@ -532,6 +599,7 @@
 				5503A9872109E8E00052DBDD /* AppDelegate.swift in Sources */,
 				55735A3B210B403400E03A6B /* LoaderViewable.swift in Sources */,
 				55735A2D210B0E2500E03A6B /* StartUpPresenter.swift in Sources */,
+				555FD4DA21104809006892E6 /* LoginActions.swift in Sources */,
 				55735A2E210B0E2500E03A6B /* StartUpViewController.swift in Sources */,
 				55735A39210B3BDD00E03A6B /* StartUpUseCaseFactory.swift in Sources */,
 				55735A58210B5CF500E03A6B /* OnboardingUseCaseFactory.swift in Sources */,

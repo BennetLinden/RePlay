@@ -16,6 +16,7 @@ protocol DependencyProvider {
     var reduxStore: Store<AppState> { get }
 
     func makeOnboardingDependencyContainer() -> OnboardingDependencyContainer
+    func makeLoginDependencyContainer() -> LoginDependencyContainer
 
     func makeStartUpViewController() -> UIViewController
     func makeStartUpPresenter() -> StartUpPresenter

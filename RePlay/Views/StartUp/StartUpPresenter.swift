@@ -27,7 +27,9 @@ final class StartUpPresenter: Presenter {
 
     func viewDidLoad() {
         stateObservable
-            .subscribe(onNext: handleState(_:))
+            .subscribe(onNext: { [unowned self] state in
+                self.handleState(state)
+            })
             .disposed(by: disposeBag)
     }
 
@@ -48,6 +50,7 @@ final class StartUpPresenter: Presenter {
 
         case .login:
             view?.hideLoader()
+            view?.showLogin()
 
         case .authenticated:
             view?.hideLoader()
