@@ -12,4 +12,5 @@ import Foundation
 // Presenter -> View
 protocol CharacterDetailView: LoaderViewable {
     func showTitle(_ title: String?)
+    func showImage(from url: URL?)
 }

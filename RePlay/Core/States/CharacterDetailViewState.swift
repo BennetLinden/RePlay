@@ -13,7 +13,7 @@ func characterDetailViewStateReducer(action: Action, state: CharacterDetailViewS
 
     let state = state ?? CharacterDetailViewState(isLoading: false, character: nil)
     switch action {
-    case _ where action is CharacterDetailAction.CharacterLoading:
+    case _ where action is CharacterDetailAction.Loading:
         return CharacterDetailViewState(isLoading: true, character: nil)
 
     case let action as CharacterDetailAction.CharacterLoaded:

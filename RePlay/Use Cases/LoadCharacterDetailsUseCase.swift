@@ -24,7 +24,7 @@ final class LoadCharacterDetailsUseCase: UseCase {
     }
 
     func start() {
-        actionDispatcher.dispatch(CharacterDetailAction.CharacterLoading())
+        actionDispatcher.dispatch(CharacterDetailAction.Loading())
         let endpoint: URL = URL(string: "https://rickandmortyapi.com/api/character/\(characterId)")!
         firstly {
             remoteAPI.request(Route(.get, endpoint))

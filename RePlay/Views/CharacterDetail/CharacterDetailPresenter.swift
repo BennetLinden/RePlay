@@ -39,6 +39,8 @@ final class CharacterDetailPresenter: Presenter {
 
     private func handleState(_ characterDetailViewState: CharacterDetailViewState) {
         characterDetailViewState.isLoading ? view?.showLoader() : view?.hideLoader()
-        view?.showTitle(characterDetailViewState.character?.name)
+        let character = characterDetailViewState.character
+        view?.showTitle(character?.name)
+        view?.showImage(from: character?.imageURL)
     }
 }

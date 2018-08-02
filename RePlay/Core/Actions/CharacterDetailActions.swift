@@ -11,7 +11,7 @@ import ReSwift
 
 enum CharacterDetailAction {
 
-    struct CharacterLoading: Action {}
+    struct Loading: Action {}
 
     struct CharacterLoaded: Action {
         let character: Character

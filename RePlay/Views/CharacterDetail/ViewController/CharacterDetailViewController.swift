@@ -8,10 +8,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class CharacterDetailViewController: UIViewController {
 
     @IBOutlet private var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private var imageView: UIImageView!
 
     private let presenter: CharacterDetailPresenter
 
@@ -30,13 +32,20 @@ final class CharacterDetailViewController: UIViewController {
 
         presenter.viewDidLoad()
     }
-
 }
 
 extension CharacterDetailViewController: CharacterDetailView {
 
     func showTitle(_ title: String?) {
         self.title = title
+    }
+
+    func showImage(from url: URL?) {
+        if let url = url {
+            imageView.kf.setImage(with: ImageResource(downloadURL: url))
+        } else {
+            imageView.image = nil
+        }
     }
 
     func showLoader() {

@@ -35,6 +35,8 @@ final class CharacterListViewController: UIViewController {
         super.viewDidLoad()
         presenter.attach(view: self)
 
+        title = "Characters"
+
         tableView.dataSource = self
         tableView.delegate = self
 

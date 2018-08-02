@@ -11,5 +11,6 @@ target 'RePlay' do
     pod 'PromiseKit'
     pod 'SnapKit', '~> 4.0'
     pod 'Reusable', '~> 4.0'
+    pod 'Kingfisher', '~> 4.8'
 
 end

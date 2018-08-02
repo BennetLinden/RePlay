@@ -29,7 +29,7 @@
 		555B4F022111FE2700ED45A5 /* CharacterDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B4F012111FE2700ED45A5 /* CharacterDetailViewControllerFactory.swift */; };
 		555B4F042112041B00ED45A5 /* LoadCharacterDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B4F032112041B00ED45A5 /* LoadCharacterDetailsUseCase.swift */; };
 		555B4F0621120B6A00ED45A5 /* LoadCharacterDetailsUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B4F0521120B6A00ED45A5 /* LoadCharacterDetailsUseCaseFactory.swift */; };
-		555B4F082112F78700ED45A5 /* CharacterDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B4F072112F78700ED45A5 /* CharacterDetailAction.swift */; };
+		555B4F082112F78700ED45A5 /* CharacterDetailActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555B4F072112F78700ED45A5 /* CharacterDetailActions.swift */; };
 		555FD4E0211088A4006892E6 /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4DC211088A4006892E6 /* CharacterListPresenter.swift */; };
 		555FD4E1211088A4006892E6 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4DD211088A4006892E6 /* CharacterListViewController.swift */; };
 		555FD4E2211088A4006892E6 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4DE211088A4006892E6 /* CharacterListView.swift */; };
@@ -42,7 +42,7 @@
 		555FD5002110AABE006892E6 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4FD2110AABD006892E6 /* Route.swift */; };
 		555FD5012110AABE006892E6 /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4FE2110AABE006892E6 /* ResponseMapper.swift */; };
 		555FD5022110AABE006892E6 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD4FF2110AABE006892E6 /* Requestable.swift */; };
-		555FD5042110AFBA006892E6 /* CharacterListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD5032110AFBA006892E6 /* CharacterListAction.swift */; };
+		555FD5042110AFBA006892E6 /* CharacterListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD5032110AFBA006892E6 /* CharacterListActions.swift */; };
 		555FD5072110B343006892E6 /* CharacterListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD5062110B343006892E6 /* CharacterListResponse.swift */; };
 		555FD5092110B65B006892E6 /* LoadCharactersUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD5082110B65B006892E6 /* LoadCharactersUseCaseFactory.swift */; };
 		555FD50B2110B820006892E6 /* CharacterListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FD50A2110B820006892E6 /* CharacterListViewControllerFactory.swift */; };
@@ -100,7 +100,7 @@
 		555B4F012111FE2700ED45A5 /* CharacterDetailViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		555B4F032112041B00ED45A5 /* LoadCharacterDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharacterDetailsUseCase.swift; sourceTree = "<group>"; };
 		555B4F0521120B6A00ED45A5 /* LoadCharacterDetailsUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharacterDetailsUseCaseFactory.swift; sourceTree = "<group>"; };
-		555B4F072112F78700ED45A5 /* CharacterDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailAction.swift; sourceTree = "<group>"; };
+		555B4F072112F78700ED45A5 /* CharacterDetailActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailActions.swift; sourceTree = "<group>"; };
 		555FD4DC211088A4006892E6 /* CharacterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
 		555FD4DD211088A4006892E6 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		555FD4DE211088A4006892E6 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		555FD4FD2110AABD006892E6 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		555FD4FE2110AABE006892E6 /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
 		555FD4FF2110AABE006892E6 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		555FD5032110AFBA006892E6 /* CharacterListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListAction.swift; sourceTree = "<group>"; };
+		555FD5032110AFBA006892E6 /* CharacterListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListActions.swift; sourceTree = "<group>"; };
 		555FD5062110B343006892E6 /* CharacterListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListResponse.swift; sourceTree = "<group>"; };
 		555FD5082110B65B006892E6 /* LoadCharactersUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharactersUseCaseFactory.swift; sourceTree = "<group>"; };
 		555FD50A2110B820006892E6 /* CharacterListViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 				55735A5F210F330B00E03A6B /* ActionDispatcher.swift */,
 				55735A3F210B42AF00E03A6B /* StartUpActions.swift */,
 				55735A55210B5CA600E03A6B /* OnboardingActions.swift */,
-				555FD5032110AFBA006892E6 /* CharacterListAction.swift */,
-				555B4F072112F78700ED45A5 /* CharacterDetailAction.swift */,
+				555FD5032110AFBA006892E6 /* CharacterListActions.swift */,
+				555B4F072112F78700ED45A5 /* CharacterDetailActions.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -588,6 +588,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RePlay/Pods-RePlay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
@@ -597,6 +598,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
@@ -646,7 +648,7 @@
 				555FD5072110B343006892E6 /* CharacterListResponse.swift in Sources */,
 				5503A9B12109EE4A0052DBDD /* AppState.swift in Sources */,
 				5503A9B32109EE4A0052DBDD /* DependencyContainer.swift in Sources */,
-				555B4F082112F78700ED45A5 /* CharacterDetailAction.swift in Sources */,
+				555B4F082112F78700ED45A5 /* CharacterDetailActions.swift in Sources */,
 				555B4F022111FE2700ED45A5 /* CharacterDetailViewControllerFactory.swift in Sources */,
 				55735A5A210F057700E03A6B /* OnboardingState.swift in Sources */,
 				55735A60210F330B00E03A6B /* ActionDispatcher.swift in Sources */,
@@ -671,7 +673,7 @@
 				555FD4E921108B9F006892E6 /* CharacterDependencyContainer.swift in Sources */,
 				5503A9B72109EE4A0052DBDD /* UseCase.swift in Sources */,
 				555FD5022110AABE006892E6 /* Requestable.swift in Sources */,
-				555FD5042110AFBA006892E6 /* CharacterListAction.swift in Sources */,
+				555FD5042110AFBA006892E6 /* CharacterListActions.swift in Sources */,
 				55735A4E210B584100E03A6B /* OnboardingPresenter.swift in Sources */,
 				5503A9B22109EE4A0052DBDD /* AppReducer.swift in Sources */,
 				555FD5002110AABE006892E6 /* Route.swift in Sources */,
