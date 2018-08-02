@@ -17,6 +17,9 @@ final class CharacterListPresenter: Presenter {
     let stateObservable: Observable<CharacterListState>
     let useCaseFactory: UseCaseFactory
 
+    private var paginationInfo: PaginationInfo?
+    private var characters: [Character] = []
+
     weak var view: CharacterListView?
 
     init(stateObservable: Observable<CharacterListState>,
@@ -31,12 +34,28 @@ final class CharacterListPresenter: Presenter {
                 self.handleState(state)
             })
             .disposed(by: disposeBag)
-        let loadCharactersUseCase = useCaseFactory.makeLoadCharactersUseCase()
-        loadCharactersUseCase.start()
+
+        useCaseFactory.makeLoadCharactersUseCase(params: nil).start()
     }
 
     private func handleState(_ characterListState: CharacterListState) {
-        print("characterListState \(characterListState)")
-        view?.showCharacters(characterListState.characters.map({ $0.name }))
+        paginationInfo = characterListState.info
+        characters = characterListState.characters
+        view?.showCharacters(characters.map({ $0.name }))
+    }
+
+    func didScrollToEnd() {
+        guard
+            let next = paginationInfo?.next,
+            let queryItem = URLComponents(string: next)?.queryItems?.first,
+            let nextPage = Int(queryItem.value ?? "")
+            else { return }
+        let params: [String: Any] = [queryItem.name: nextPage]
+        useCaseFactory.makeLoadCharactersUseCase(params: params).start()
+    }
+
+    func didSelectRow(with index: Int) {
+        let characterId = characters[index].id
+        view?.showCharacterDetails(for: characterId)
     }
 }

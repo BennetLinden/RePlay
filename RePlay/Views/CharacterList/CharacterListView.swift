@@ -12,4 +12,5 @@ import Foundation
 // Presenter -> View
 protocol CharacterListView: View {
     func showCharacters(_ characters: [String])
+    func showCharacterDetails(for characterId: Int)
 }

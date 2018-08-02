@@ -12,10 +12,10 @@ import Alamofire
 struct Route: Requestable {
 
     let method: HTTPMethod
-    let endpoint: String
+    let endpoint: URL
     let parameters: [String: Any]?
 
-    init(_ method: HTTPMethod, _ endpoint: String, with params: [String: Any]? = nil) {
+    init(_ method: HTTPMethod, _ endpoint: URL, with params: [String: Any]? = nil) {
         self.method = method
         self.endpoint = endpoint
         self.parameters = params

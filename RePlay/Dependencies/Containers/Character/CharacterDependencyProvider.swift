@@ -20,7 +20,10 @@ protocol CharacterDependencyProvider {
     func makeCharacterListViewController() -> UIViewController
     func makeCharacterListPresenter() -> CharacterListPresenter
     func makeCharacterListStateObservable() -> Observable<CharacterListState>
+    func makeLoadCharactersUseCase(params: [String: Any]?) -> UseCase
 
-    func makeLoadCharactersUseCase() -> UseCase
-
+    func makeCharacterDetailViewController(for characterId: Int) -> UIViewController
+    func makeCharacterDetailPresenter(for characterId: Int) -> CharacterDetailPresenter
+    func makeCharacterDetailStateObservable() -> Observable<CharacterDetailViewState>
+    func makeCharacterDetailsUseCase(characterId: Int) -> UseCase
 }

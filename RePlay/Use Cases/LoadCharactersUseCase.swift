@@ -13,24 +13,31 @@ final class LoadCharactersUseCase: UseCase {
 
     let remoteAPI: RemoteAPI
     let actionDispatcher: ActionDispatcher
+    let params: [String: Any]?
 
     init(remoteAPI: RemoteAPI,
-         actionDispatcher: ActionDispatcher) {
+         actionDispatcher: ActionDispatcher,
+         params: [String: Any]?) {
         self.remoteAPI = remoteAPI
         self.actionDispatcher = actionDispatcher
+        self.params = params
     }
 
     func start() {
-        let endpoint = "https://rickandmortyapi.com/api/character/"
+        let endpoint: URL = URL(string: "https://rickandmortyapi.com/api/character/")!
         firstly {
-            remoteAPI.request(Route(.get, endpoint))
-        }.then {
-            ResponseMapper<CharacterListResponse>.map($0)
-        }.done { [weak self] response in
-            self?.actionDispatcher.dispatch(CharacterListAction.CharactersLoaded(characters: response.results))
-        }.catch { [weak self] error in
-            print(error.localizedDescription)
-            self?.actionDispatcher.dispatch(CharacterListAction.LoadingCharactersFailed(error: error))
+            remoteAPI.request(Route(.get, endpoint, with: params))
+            }.then {
+                ResponseMapper<CharacterListResponse>.map($0)
+            }.done { response in
+                self.actionDispatcher
+                    .dispatch(
+                        CharacterListAction.CharactersLoaded(info: response.info,
+                                                             characters: response.results)
+                )
+            }.catch { error in
+                print(error.localizedDescription)
+                self.actionDispatcher.dispatch(CharacterListAction.LoadingCharactersFailed(error: error))
         }
     }
 }

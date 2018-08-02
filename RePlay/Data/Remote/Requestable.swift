@@ -12,7 +12,7 @@ import Alamofire
 protocol Requestable: URLRequestConvertible {
 
     var method: Alamofire.HTTPMethod { get }
-    var endpoint: String { get }
+    var endpoint: URL { get }
     var parameters: [String: Any]? { get }
 
 }
@@ -28,7 +28,7 @@ extension Requestable {
 
     public func asURLRequest() throws -> URLRequest {
         let request: URLRequest = {
-            var request = URLRequest(url: URL(string: endpoint)!)
+            var request = URLRequest(url: endpoint)
             request.httpMethod = method.rawValue
             return request
         }()

@@ -12,4 +12,5 @@ struct AppState: StateType, Equatable {
     let startUpState: StartUpState
     let onboardingState: OnboardingState
     let characterListState: CharacterListState
+    let characterDetailViewState: CharacterDetailViewState
 }

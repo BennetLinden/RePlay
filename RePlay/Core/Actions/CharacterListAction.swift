@@ -12,6 +12,7 @@ import ReSwift
 enum CharacterListAction {
 
     struct CharactersLoaded: Action {
+        let info: PaginationInfo
         let characters: [Character]
     }
 

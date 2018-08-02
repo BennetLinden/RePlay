@@ -9,5 +9,6 @@
 import Foundation
 
 struct CharacterListResponse: Codable {
+    let info: PaginationInfo
     let results: [Character]
 }

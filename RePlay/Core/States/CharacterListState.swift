@@ -11,12 +11,11 @@ import ReSwift
 
 func characterListReducer(action: Action, state: CharacterListState?) -> CharacterListState {
 
-    let state = state ?? CharacterListState(characters: [])
-
-    print(action)
+    let state = state ?? CharacterListState(info: nil, characters: [])
     switch action {
     case let action as CharacterListAction.CharactersLoaded:
-        return CharacterListState(characters: action.characters)
+        let characters = state.characters + action.characters
+        return CharacterListState(info: action.info, characters: characters)
 
 //    case let action as CharacterListAction.LoadingCharactersFailed:
 //        return CharacterListState(characters: state.characters, error: action.error)
@@ -27,5 +26,7 @@ func characterListReducer(action: Action, state: CharacterListState?) -> Charact
 }
 
 struct CharacterListState: StateType, Equatable {
+    let info: PaginationInfo?
     let characters: [Character]
+
 }
