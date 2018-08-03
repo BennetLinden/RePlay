@@ -9,5 +9,5 @@
 import Foundation
 
 protocol LoadCharacterDetailsUseCaseFactory {
-    func makeCharacterDetailsUseCase(characterId: Int) -> UseCase
+    func makeLoadCharacterDetailsUseCase(characterId: Int) -> UseCase
 }

@@ -17,10 +17,13 @@ protocol DependencyProvider {
 
     func makeOnboardingDependencyContainer() -> OnboardingDependencyContainer
     func makeCharacterDependencyContainer() -> CharacterDependencyContainer
+    func makeEpisodeDependencyContainer() -> EpisodeDependencyContainer
 
     func makeStartUpViewController() -> UIViewController
     func makeStartUpPresenter() -> StartUpPresenter
     func makeStartUpStateObservable() -> Observable<StartUpState>
     func makeStartUpUseCase() -> UseCase
 
+    func makeTabBarController() -> UIViewController
+    func makeTabBarViewControllers() -> [UIViewController]
 }

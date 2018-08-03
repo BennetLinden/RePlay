@@ -13,6 +13,7 @@ func appReducer(action: Action, state: AppState?) -> AppState {
         startUpState: startUpReducer(action: action, state: state?.startUpState),
         onboardingState: onboardingReducer(action: action, state: state?.onboardingState),
         characterListState: characterListReducer(action: action, state: state?.characterListState),
-        characterDetailViewState: characterDetailViewStateReducer(action: action, state: state?.characterDetailViewState)
+        characterDetailViewState: characterDetailViewStateReducer(action: action, state: state?.characterDetailViewState),
+        episodeListState: episodeListReducer(action: action, state: state?.episodeListState)
     )
 }

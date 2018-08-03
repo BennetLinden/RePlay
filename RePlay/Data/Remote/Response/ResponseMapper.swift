@@ -14,7 +14,9 @@ class ResponseMapper<Response: Decodable> {
     static func map(_ data: Data) -> Promise<Response> {
         return Promise { seal in
             do {
-                try seal.fulfill(JSONDecoder().decode(Response.self, from: data))
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                try seal.fulfill(decoder.decode(Response.self, from: data))
             } catch {
                 seal.reject(error)
             }

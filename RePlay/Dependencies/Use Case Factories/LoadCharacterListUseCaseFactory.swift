@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LoadCharactersUseCaseFactory {
-    func makeLoadCharactersUseCase(params: [String: Any]?) -> UseCase
+protocol LoadCharacterListUseCaseFactory {
+    func makeLoadCharacterListUseCase(params: [String: Any]?) -> UseCase
 }

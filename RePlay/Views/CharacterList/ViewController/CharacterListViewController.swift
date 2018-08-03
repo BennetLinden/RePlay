@@ -29,13 +29,12 @@ final class CharacterListViewController: UIViewController {
         self.presenter = presenter
         self.viewControllerFactory = viewControllerFactory
         super.init(nibName: String(describing: CharacterListViewController.self), bundle: .main)
+        title = "Characters"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attach(view: self)
-
-        title = "Characters"
 
         tableView.dataSource = self
         tableView.delegate = self

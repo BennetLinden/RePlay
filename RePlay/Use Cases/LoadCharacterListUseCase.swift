@@ -9,7 +9,7 @@
 import Foundation
 import PromiseKit
 
-final class LoadCharactersUseCase: UseCase {
+final class LoadCharacterListUseCase: UseCase {
 
     let remoteAPI: RemoteAPI
     let actionDispatcher: ActionDispatcher
@@ -24,6 +24,7 @@ final class LoadCharactersUseCase: UseCase {
     }
 
     func start() {
+
         let endpoint: URL = URL(string: "https://rickandmortyapi.com/api/character/")!
         firstly {
             remoteAPI.request(Route(.get, endpoint, with: params))

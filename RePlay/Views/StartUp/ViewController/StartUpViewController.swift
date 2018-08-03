@@ -15,7 +15,7 @@ final class StartUpViewController: UIViewController {
 
     private let presenter: StartUpPresenter
     private let onboardingViewControllerFactory: OnboardingViewControllerFactory
-    private let characterListViewControllerFactory: CharacterListViewControllerFactory
+    private let tabBarControllerFactory: TabBarControllerFactory
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -23,10 +23,10 @@ final class StartUpViewController: UIViewController {
 
     init(presenter: StartUpPresenter,
          onboardingViewControllerFactory: OnboardingViewControllerFactory,
-         characterListViewControllerFactory: CharacterListViewControllerFactory) {
+         tabBarControllerFactory: TabBarControllerFactory) {
         self.presenter = presenter
         self.onboardingViewControllerFactory = onboardingViewControllerFactory
-        self.characterListViewControllerFactory = characterListViewControllerFactory
+        self.tabBarControllerFactory = tabBarControllerFactory
         super.init(nibName: String(describing: StartUpViewController.self), bundle: .main)
     }
 
@@ -50,8 +50,8 @@ extension StartUpViewController: StartUpView {
     }
 
     func showCharacterList() {
-        let characterListViewController = characterListViewControllerFactory.makeCharacterListViewController()
-        present(characterListViewController, animated: true)
+        let tabBarController = tabBarControllerFactory.makeTabBarController()
+        present(tabBarController, animated: true)
     }
 
     func showLoader() {

@@ -28,5 +28,4 @@ func characterListReducer(action: Action, state: CharacterListState?) -> Charact
 struct CharacterListState: StateType, Equatable {
     let info: PaginationInfo?
     let characters: [Character]
-
 }

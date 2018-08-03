@@ -34,7 +34,7 @@ final class CharacterDetailPresenter: Presenter {
                 self?.handleState(characterDetailViewState)
             })
             .disposed(by: disposeBag)
-        useCaseFactory.makeCharacterDetailsUseCase(characterId: characterId).start()
+        useCaseFactory.makeLoadCharacterDetailsUseCase(characterId: characterId).start()
     }
 
     private func handleState(_ characterDetailViewState: CharacterDetailViewState) {

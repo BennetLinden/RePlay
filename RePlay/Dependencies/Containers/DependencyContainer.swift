@@ -14,19 +14,29 @@ import RxSwift
 final class DependencyContainer: DependencyProvider {
 
     let reduxStore: Store<AppState> = Store<AppState>(reducer: appReducer, state: nil)
+    let remoteAPI: RemoteAPI = RemoteAPI()
 
     func makeOnboardingDependencyContainer() -> OnboardingDependencyContainer {
         return OnboardingDependencyContainer(reduxStore: reduxStore)
     }
 
     func makeCharacterDependencyContainer() -> CharacterDependencyContainer {
-        return CharacterDependencyContainer(reduxStore: reduxStore)
+        return CharacterDependencyContainer(reduxStore: reduxStore,
+                                            remoteAPI: remoteAPI)
     }
+
+    func makeEpisodeDependencyContainer() -> EpisodeDependencyContainer {
+        return EpisodeDependencyContainer(reduxStore: reduxStore,
+                                          remoteAPI: remoteAPI)
+    }
+}
+
+extension DependencyContainer: StartUpViewControllerFactory, StartUpUseCaseFactory {
 
     func makeStartUpViewController() -> UIViewController {
         return StartUpViewController(presenter: makeStartUpPresenter(),
                                      onboardingViewControllerFactory: makeOnboardingDependencyContainer(),
-                                     characterListViewControllerFactory: makeCharacterDependencyContainer())
+                                     tabBarControllerFactory: self)
     }
 
     func makeStartUpPresenter() -> StartUpPresenter {
@@ -43,5 +53,20 @@ final class DependencyContainer: DependencyProvider {
     }
 }
 
-extension DependencyContainer: StartUpViewControllerFactory {}
-extension DependencyContainer: StartUpUseCaseFactory {}
+extension DependencyContainer: TabBarControllerFactory {
+
+    func makeTabBarController() -> UIViewController {
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = makeTabBarViewControllers()
+        return tabBarController
+    }
+
+    func makeTabBarViewControllers() -> [UIViewController] {
+        let characterListViewControllerFactory: CharacterListViewControllerFactory = makeCharacterDependencyContainer()
+        let episodeListViewControllerFactory: EpisodeListViewControllerFactory = makeEpisodeDependencyContainer()
+        return [
+            characterListViewControllerFactory.makeCharacterListViewController(),
+            episodeListViewControllerFactory.makeEpisodeListViewController()
+        ]
+    }
+}

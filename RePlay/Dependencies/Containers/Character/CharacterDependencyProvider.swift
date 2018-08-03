@@ -14,16 +14,18 @@ import RxSwift
 protocol CharacterDependencyProvider {
 
     var reduxStore: Store<AppState> { get }
+    var remoteAPI: RemoteAPI { get }
 
-    init(reduxStore: Store<AppState>)
+    init(reduxStore: Store<AppState>,
+         remoteAPI: RemoteAPI)
 
     func makeCharacterListViewController() -> UIViewController
     func makeCharacterListPresenter() -> CharacterListPresenter
     func makeCharacterListStateObservable() -> Observable<CharacterListState>
-    func makeLoadCharactersUseCase(params: [String: Any]?) -> UseCase
+    func makeLoadCharacterListUseCase(params: [String: Any]?) -> UseCase
 
     func makeCharacterDetailViewController(for characterId: Int) -> UIViewController
     func makeCharacterDetailPresenter(for characterId: Int) -> CharacterDetailPresenter
     func makeCharacterDetailStateObservable() -> Observable<CharacterDetailViewState>
-    func makeCharacterDetailsUseCase(characterId: Int) -> UseCase
+    func makeLoadCharacterDetailsUseCase(characterId: Int) -> UseCase
 }

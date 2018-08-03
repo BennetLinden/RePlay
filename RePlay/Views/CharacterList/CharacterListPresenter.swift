@@ -11,7 +11,7 @@ import RxSwift
 
 final class CharacterListPresenter: Presenter {
 
-    typealias UseCaseFactory = LoadCharactersUseCaseFactory
+    typealias UseCaseFactory = LoadCharacterListUseCaseFactory
 
     private let disposeBag = DisposeBag()
     let stateObservable: Observable<CharacterListState>
@@ -35,7 +35,7 @@ final class CharacterListPresenter: Presenter {
             })
             .disposed(by: disposeBag)
 
-        useCaseFactory.makeLoadCharactersUseCase(params: nil).start()
+        useCaseFactory.makeLoadCharacterListUseCase(params: nil).start()
     }
 
     private func handleState(_ characterListState: CharacterListState) {
@@ -51,7 +51,7 @@ final class CharacterListPresenter: Presenter {
             let nextPage = Int(queryItem.value ?? "")
             else { return }
         let params: [String: Any] = [queryItem.name: nextPage]
-        useCaseFactory.makeLoadCharactersUseCase(params: params).start()
+        useCaseFactory.makeLoadCharacterListUseCase(params: params).start()
     }
 
     func didSelectRow(with index: Int) {

@@ -12,16 +12,17 @@ import ReSwift
 import RxSwift
 
 final class CharacterDependencyContainer: CharacterDependencyProvider {
-
     let reduxStore: Store<AppState>
-    let remoteAPI = RemoteAPI()
+    let remoteAPI: RemoteAPI
 
-    init(reduxStore: Store<AppState>) {
+    init(reduxStore: Store<AppState>,
+         remoteAPI: RemoteAPI) {
         self.reduxStore = reduxStore
+        self.remoteAPI = remoteAPI
     }
 }
 
-extension CharacterDependencyContainer: CharacterListViewControllerFactory, LoadCharactersUseCaseFactory {
+extension CharacterDependencyContainer: CharacterListViewControllerFactory, LoadCharacterListUseCaseFactory {
 
     func makeCharacterListViewController() -> UIViewController {
         let characterListViewController = CharacterListViewController(presenter: makeCharacterListPresenter(),
@@ -38,10 +39,10 @@ extension CharacterDependencyContainer: CharacterListViewControllerFactory, Load
         return reduxStore.makeObservable({ $0.characterListState })
     }
 
-    func makeLoadCharactersUseCase(params: [String: Any]?) -> UseCase {
-        return LoadCharactersUseCase(remoteAPI: remoteAPI,
-                                     actionDispatcher: reduxStore,
-                                     params: params)
+    func makeLoadCharacterListUseCase(params: [String: Any]?) -> UseCase {
+        return LoadCharacterListUseCase(remoteAPI: remoteAPI,
+                                        actionDispatcher: reduxStore,
+                                        params: params)
     }
 }
 
@@ -61,7 +62,7 @@ extension CharacterDependencyContainer: CharacterDetailViewControllerFactory, Lo
         return reduxStore.makeObservable({ $0.characterDetailViewState })
     }
 
-    func makeCharacterDetailsUseCase(characterId: Int) -> UseCase {
+    func makeLoadCharacterDetailsUseCase(characterId: Int) -> UseCase {
         return LoadCharacterDetailsUseCase(remoteAPI: remoteAPI,
                                            actionDispatcher: reduxStore,
                                            characterId: characterId)
